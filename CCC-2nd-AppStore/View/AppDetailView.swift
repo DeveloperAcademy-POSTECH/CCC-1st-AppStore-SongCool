@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AppDetailView: View {
     var body: some View {
-        
         Text("appDetails")
     }
 }

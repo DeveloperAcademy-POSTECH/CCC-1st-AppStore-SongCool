@@ -5,19 +5,17 @@
 //  Created by 송시원 on 2022/06/24.
 //
 
-//데이터는 이 뷰에 들어올때 사용해야함.
+// 데이터는 이 뷰에 들어올때 사용해야함.
 import SwiftUI
 
 struct TodayView: View {
     var body: some View {
-        ScrollView{
-            
-            LazyVStack(alignment: .leading, spacing: 0){
-                
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: 0) {
                 Text("6월 27일 월요일")
                     .font(.footnote)
                     .padding(.top, 25)
-                HStack{
+                HStack {
                     Text("투데이")
                         .font(.largeTitle)
                         .fontWeight(.bold)

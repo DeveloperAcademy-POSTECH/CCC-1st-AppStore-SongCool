@@ -9,18 +9,18 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        NavigationView{
-            ScrollView{
-                LazyVStack{
+        NavigationView {
+            ScrollView {
+                LazyVStack {
                     Divider()
                         .padding()
 
-                    ScrollView(.horizontal, showsIndicators: false){
-                        LazyHStack(spacing: 8){
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHStack(spacing: 8) {
                             ForEach(0..<4) { idx in
                                 NavigationLink(destination: AppDetailView()) {
-                                    //백그라운드 이미지로 설정하기.
-                                    VStack(alignment: .leading, spacing: 0){
+                                    // 백그라운드 이미지로 설정하기.
+                                    VStack(alignment: .leading, spacing: 0) {
                                         Text("건강한 삶")
                                             .font(.caption2)
                                             .padding(.bottom, 4)
@@ -32,8 +32,7 @@ struct AppView: View {
                                             .multilineTextAlignment(.leading)
                                             .foregroundColor(.black)
 
-                                        ZStack(alignment: .bottom){
-                                            
+                                        ZStack(alignment: .bottom) {
                                             AsyncImage(url: URL(string: "https://picsum.photos/225/350")) { image in
                                                 image.resizable()
                                             } placeholder: {
@@ -41,25 +40,22 @@ struct AppView: View {
                                             }
                                             .frame(maxWidth: .infinity)
                                             .clipShape(RoundedRectangle(cornerRadius: 6))
-                                            
-                                            HStack{
+                                            HStack {
                                                 RoundedRectangle(cornerRadius: 8)
                                                     .frame(width: 36, height: 36)
-                                                VStack(alignment: .leading, spacing: 2 ){
+                                                VStack(alignment: .leading, spacing: 2 ) {
                                                     Text("사운드짐 - 운동하는사람들의"     )
                                                         .font(.subheadline)
                                                         .foregroundColor(.white)
-                                                    
-                                                    Text("전문가의 운동가이드, 운동기록과"     )
+                                                    Text("전문가의 운동가이드, 운동기록과")
                                                         .font(.caption)
                                                         .foregroundColor(.gray)
                                                 }
-                                                
                                                 Spacer()
-                                                Button{
-                                                    
+                                                Button {
+                                                    // 받기버튼
                                                 }label: {
-                                                    ZStack{
+                                                    ZStack {
                                                         Capsule().frame(width: 72, height: 28)
                                                             .foregroundColor(.white.opacity(0.4))
 
@@ -77,16 +73,12 @@ struct AppView: View {
                                 .frame(width: 350)
                                 .padding(.leading)
                             }
-                   
-
                         }
                     }
                 }
             }
-            
             .navigationBarTitle("앱")
         }
-        
     }
 }
 
