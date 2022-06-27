@@ -10,7 +10,7 @@ import SwiftUI
 struct TodayCardView: View {
     var body: some View {
         VStack(spacing: 0){
-            ZStack{
+            ZStack(alignment: .topLeading){
                 AsyncImage(url: URL(string: "https://picsum.photos/225/350")) { image in
                     image.resizable()
                 } placeholder: {
@@ -18,9 +18,17 @@ struct TodayCardView: View {
                 }
                 .frame(height: 350)
                 
-                VStack{}
-                    .padding()
-}
+                VStack(alignment: .leading, spacing: 6){
+                    Text("새로운 게임")
+                        .font(.subheadline)
+                    Text("정통 무협의 시작")
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
+                .padding(.vertical, 16)
+                .padding(.horizontal, 20)
+                
+            }
             HStack( spacing: 14){
                 RoundedRectangle(cornerRadius: 11)
                     .frame(width: 48, height: 48)
@@ -51,7 +59,7 @@ struct TodayCardView: View {
         }
         .clipShape(RoundedRectangle(cornerRadius: 14))
             .frame(maxWidth: .infinity)
-            .shadow(color: .black.opacity(0.4), radius: 30, y: 10)
+            .shadow(color: .black.opacity(0.15), radius: 20, y: 10)
         
     }
 }

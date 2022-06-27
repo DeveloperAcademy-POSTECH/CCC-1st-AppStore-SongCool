@@ -16,15 +16,16 @@ struct TodayView: View {
                 
                 Text("6월 27일 월요일")
                     .font(.footnote)
+                    .padding(.top, 25)
                 HStack{
                     Text("투데이")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(.bottom, 6)
                     Spacer()
                     Circle()
                         .frame(width: 36, height: 36)
-                }
+                }                        .padding(.bottom, 8)
+
                 TodayCardView()
                     .padding(.bottom, 20)
                 TodayCardView()

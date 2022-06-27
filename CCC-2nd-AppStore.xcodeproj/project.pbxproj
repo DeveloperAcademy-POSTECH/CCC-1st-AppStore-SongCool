@@ -15,6 +15,7 @@
 		2D2151EE2866ED3F007C0A0F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151ED2866ED3F007C0A0F /* AppView.swift */; };
 		2D2151F02868C485007C0A0F /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151EF2868C485007C0A0F /* AppDetailView.swift */; };
 		2D2151F228693AC7007C0A0F /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151F128693AC7007C0A0F /* TodayCardView.swift */; };
+		2D2151F428694757007C0A0F /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151F328694757007C0A0F /* TodayListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2D2151ED2866ED3F007C0A0F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		2D2151EF2868C485007C0A0F /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
 		2D2151F128693AC7007C0A0F /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
+		2D2151F328694757007C0A0F /* TodayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				2D2151EB2864C52A007C0A0F /* TodayView.swift */,
 				2D2151F128693AC7007C0A0F /* TodayCardView.swift */,
+				2D2151F328694757007C0A0F /* TodayListView.swift */,
 				2D2151ED2866ED3F007C0A0F /* AppView.swift */,
 				2D2151EF2868C485007C0A0F /* AppDetailView.swift */,
 			);
@@ -170,6 +173,7 @@
 				2D2151DD2864BC2E007C0A0F /* ContentView.swift in Sources */,
 				2D2151F02868C485007C0A0F /* AppDetailView.swift in Sources */,
 				2D2151EC2864C52A007C0A0F /* TodayView.swift in Sources */,
+				2D2151F428694757007C0A0F /* TodayListView.swift in Sources */,
 				2D2151DB2864BC2E007C0A0F /* CCC_2nd_AppStoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
