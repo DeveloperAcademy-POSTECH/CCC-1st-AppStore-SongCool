@@ -17,6 +17,7 @@
 		2D2151F228693AC7007C0A0F /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151F128693AC7007C0A0F /* TodayCardView.swift */; };
 		2D2151F428694757007C0A0F /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151F328694757007C0A0F /* TodayListView.swift */; };
 		2D2151FE2869D9DA007C0A0F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2151FD2869D9DA007C0A0F /* .swiftlint.yml */; };
+		2D2152002869ECAC007C0A0F /* AppListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151FF2869ECAC007C0A0F /* AppListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2D2151F128693AC7007C0A0F /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
 		2D2151F328694757007C0A0F /* TodayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
 		2D2151FD2869D9DA007C0A0F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2D2151FF2869ECAC007C0A0F /* AppListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				2D2151F128693AC7007C0A0F /* TodayCardView.swift */,
 				2D2151F328694757007C0A0F /* TodayListView.swift */,
 				2D2151ED2866ED3F007C0A0F /* AppView.swift */,
+				2D2151FF2869ECAC007C0A0F /* AppListItemView.swift */,
 				2D2151EF2868C485007C0A0F /* AppDetailView.swift */,
 			);
 			path = View;
@@ -201,6 +204,7 @@
 				2D2151EC2864C52A007C0A0F /* TodayView.swift in Sources */,
 				2D2151F428694757007C0A0F /* TodayListView.swift in Sources */,
 				2D2151DB2864BC2E007C0A0F /* CCC_2nd_AppStoreApp.swift in Sources */,
+				2D2152002869ECAC007C0A0F /* AppListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ struct TodayView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
-                Text("6월 27일 월요일")
+                Text("6월 28일 화요일")
                     .font(.footnote)
                     .padding(.top, 25)
                 HStack {
@@ -26,7 +26,7 @@ struct TodayView: View {
 
                 TodayCardView()
                     .padding(.bottom, 20)
-                TodayCardView()
+                TodayListView()
                     .padding(.bottom, 20)
                 TodayCardView()
                     .padding(.bottom, 20)

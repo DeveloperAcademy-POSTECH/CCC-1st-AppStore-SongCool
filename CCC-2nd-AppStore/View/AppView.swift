@@ -13,7 +13,7 @@ struct AppView: View {
             ScrollView {
                 LazyVStack {
                     Divider()
-                        .padding()
+                        .padding(.horizontal, 20)
 
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHStack(spacing: 8) {
@@ -71,13 +71,52 @@ struct AppView: View {
     //                                .background(.gray)
                                 }
                                 .frame(width: 350)
-                                .padding(.leading)
+                                .padding(.leading, 20)
                             }
                         }
                     }
+                    Divider()
+                        .padding(.horizontal, 20)
+                        .padding(.top, 32)
+                    HStack {
+                        Text("무료 앱 순위")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Button {}label: {
+                            Text("모두 보기")
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack{
+                            ForEach(0..<5) { col in
+                                VStack {
+                                    ForEach(0..<3) { row in
+                                        AppListItemView(count: row + 1 + col * 3)
+                                    }
+                                }
+                                .padding(.leading, 20)
+                            }
+                        }
+                    }
+                    Divider()
+                        .padding(.horizontal, 20)
+                        .padding(.top, 32)
                 }
             }
             .navigationBarTitle("앱")
+            .toolbar {
+                // Home 화면인 경우: 소리 ON/OFF
+                // ItemList 화면의 경우: 뒤로가기 버튼
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                    }) {
+                        Circle()
+                            .frame(width: 36, height: 36)
+                    }
+                }
+            }
         }
     }
 }

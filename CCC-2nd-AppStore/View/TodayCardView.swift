@@ -19,10 +19,12 @@ struct TodayCardView: View {
                 .frame(height: 350)
                 VStack(alignment: .leading, spacing: 6) {
                     Text("새로운 게임")
+                        .foregroundColor(.white)
                         .font(.subheadline)
                     Text("정통 무협의 시작")
                         .font(.title)
                         .fontWeight(.bold)
+                        .foregroundColor(.white)
                 }
                 .padding(.vertical, 16)
                 .padding(.horizontal, 20)

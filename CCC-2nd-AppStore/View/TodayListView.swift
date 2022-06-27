@@ -17,7 +17,7 @@ struct TodayListView: View {
                     .font(.title)
                     .fontWeight(.bold)
             }
-            .padding(.vertical, 16)
+            .padding(.top, 16)
             .padding(.horizontal, 20)
             VStack(spacing: 0) {
                 ForEach(0..<4) { idx in
