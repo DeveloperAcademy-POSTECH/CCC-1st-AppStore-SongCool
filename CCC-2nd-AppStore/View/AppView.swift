@@ -14,11 +14,11 @@ struct AppView: View {
                 LazyVStack {
                     Divider()
                         .padding(.horizontal, 20)
-
+                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHStack(spacing: 8) {
                             ForEach(0..<4) { idx in
-                                NavigationLink(destination: AppDetailView()) {
+
                                     // 백그라운드 이미지로 설정하기.
                                     VStack(alignment: .leading, spacing: 0) {
                                         Text("건강한 삶")
@@ -31,7 +31,6 @@ struct AppView: View {
                                             .padding(.bottom, 12)
                                             .multilineTextAlignment(.leading)
                                             .foregroundColor(.black)
-
                                         ZStack(alignment: .bottom) {
                                             AsyncImage(url: URL(string: "https://picsum.photos/225/350")) { image in
                                                 image.resizable()
@@ -41,6 +40,7 @@ struct AppView: View {
                                             .frame(maxWidth: .infinity)
                                             .clipShape(RoundedRectangle(cornerRadius: 6))
                                             HStack {
+                                                NavigationLink(destination: AppDetailView()) {
                                                 RoundedRectangle(cornerRadius: 8)
                                                     .frame(width: 36, height: 36)
                                                 VStack(alignment: .leading, spacing: 2 ) {
@@ -52,13 +52,13 @@ struct AppView: View {
                                                         .foregroundColor(.gray)
                                                 }
                                                 Spacer()
+                                                }
                                                 Button {
                                                     // 받기버튼
                                                 }label: {
                                                     ZStack {
                                                         Capsule().frame(width: 72, height: 28)
                                                             .foregroundColor(.white.opacity(0.4))
-
                                                         Text("받기")
                                                             .foregroundColor(.white)
                                                     }
@@ -68,8 +68,8 @@ struct AppView: View {
                                         }
                                         .frame(width: 350, height: 225)
                                     }
-    //                                .background(.gray)
-                                }
+
+
                                 .frame(width: 350)
                                 .padding(.leading, 20)
                             }
@@ -78,31 +78,12 @@ struct AppView: View {
                     Divider()
                         .padding(.horizontal, 20)
                         .padding(.top, 32)
-                    HStack {
-                        Text("무료 앱 순위")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                        Spacer()
-                        Button {}label: {
-                            Text("모두 보기")
-                        }
-                    }
-                    .padding(.horizontal, 20)
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack{
-                            ForEach(0..<5) { col in
-                                VStack {
-                                    ForEach(0..<3) { row in
-                                        AppListItemView(count: row + 1 + col * 3)
-                                    }
-                                }
-                                .padding(.leading, 20)
-                            }
-                        }
-                    }
-                    Divider()
-                        .padding(.horizontal, 20)
-                        .padding(.top, 32)
+                    AppListView(isRanking: true, title: "무료 앱 순위")
+                    AppListView(isRanking: false, title: "iPhone 필수 앱")
+                    AppListView(isRanking: false, title: "인기 앱")
+                    AppListView(isRanking: false, title: "요즘 뜨는 앱")
+                    AppListView(isRanking: false, title: "볼까, 들을까, 읽을까?")
+                    AppListView(isRanking: false, title: "스타트업 앱으로 스타트하기")
                 }
             }
             .navigationBarTitle("앱")
