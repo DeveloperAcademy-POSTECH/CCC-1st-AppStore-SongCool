@@ -11,6 +11,14 @@
 		2D2151DD2864BC2E007C0A0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151DC2864BC2E007C0A0F /* ContentView.swift */; };
 		2D2151DF2864BC30007C0A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D2151DE2864BC30007C0A0F /* Assets.xcassets */; };
 		2D2151E22864BC30007C0A0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D2151E12864BC30007C0A0F /* Preview Assets.xcassets */; };
+		2D2151EC2864C52A007C0A0F /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151EB2864C52A007C0A0F /* TodayView.swift */; };
+		2D2151EE2866ED3F007C0A0F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151ED2866ED3F007C0A0F /* AppView.swift */; };
+		2D2151F02868C485007C0A0F /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151EF2868C485007C0A0F /* AppDetailView.swift */; };
+		2D2151F228693AC7007C0A0F /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151F128693AC7007C0A0F /* TodayCardView.swift */; };
+		2D2151F428694757007C0A0F /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151F328694757007C0A0F /* TodayListView.swift */; };
+		2D2151FE2869D9DA007C0A0F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2151FD2869D9DA007C0A0F /* .swiftlint.yml */; };
+		2D2152002869ECAC007C0A0F /* AppListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2151FF2869ECAC007C0A0F /* AppListItemView.swift */; };
+		2D2152022869F27E007C0A0F /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2152012869F27E007C0A0F /* AppListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		2D2151DC2864BC2E007C0A0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D2151DE2864BC30007C0A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D2151E12864BC30007C0A0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D2151EB2864C52A007C0A0F /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		2D2151ED2866ED3F007C0A0F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		2D2151EF2868C485007C0A0F /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
+		2D2151F128693AC7007C0A0F /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
+		2D2151F328694757007C0A0F /* TodayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
+		2D2151FD2869D9DA007C0A0F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2D2151FF2869ECAC007C0A0F /* AppListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListItemView.swift; sourceTree = "<group>"; };
+		2D2152012869F27E007C0A0F /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,7 @@
 		2D2151CE2864BC2E007C0A0F = {
 			isa = PBXGroup;
 			children = (
+				2D2151FD2869D9DA007C0A0F /* .swiftlint.yml */,
 				2D2151D92864BC2E007C0A0F /* CCC-2nd-AppStore */,
 				2D2151D82864BC2E007C0A0F /* Products */,
 			);
@@ -51,8 +68,10 @@
 		2D2151D92864BC2E007C0A0F /* CCC-2nd-AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				2D2151EA2864C4FE007C0A0F /* ViewModel */,
 				2D2151DA2864BC2E007C0A0F /* CCC_2nd_AppStoreApp.swift */,
 				2D2151DC2864BC2E007C0A0F /* ContentView.swift */,
+				2D2151E82864C4EA007C0A0F /* View */,
 				2D2151DE2864BC30007C0A0F /* Assets.xcassets */,
 				2D2151E02864BC30007C0A0F /* Preview Content */,
 			);
@@ -67,6 +86,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2D2151E82864C4EA007C0A0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D2151EB2864C52A007C0A0F /* TodayView.swift */,
+				2D2151F128693AC7007C0A0F /* TodayCardView.swift */,
+				2D2151F328694757007C0A0F /* TodayListView.swift */,
+				2D2151ED2866ED3F007C0A0F /* AppView.swift */,
+				2D2152012869F27E007C0A0F /* AppListView.swift */,
+				2D2151FF2869ECAC007C0A0F /* AppListItemView.swift */,
+				2D2151EF2868C485007C0A0F /* AppDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D2151EA2864C4FE007C0A0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2151E52864BC30007C0A0F /* Build configuration list for PBXNativeTarget "CCC-2nd-AppStore" */;
 			buildPhases = (
+				2D2151FA2869BDB7007C0A0F /*  SwiftLint Script */,
 				2D2151D32864BC2E007C0A0F /* Sources */,
 				2D2151D42864BC2E007C0A0F /* Frameworks */,
 				2D2151D52864BC2E007C0A0F /* Resources */,
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2151FE2869D9DA007C0A0F /* .swiftlint.yml in Resources */,
 				2D2151E22864BC30007C0A0F /* Preview Assets.xcassets in Resources */,
 				2D2151DF2864BC30007C0A0F /* Assets.xcassets in Resources */,
 			);
@@ -132,13 +174,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D2151FA2869BDB7007C0A0F /*  SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = " SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D2151D32864BC2E007C0A0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2151F228693AC7007C0A0F /* TodayCardView.swift in Sources */,
+				2D2151EE2866ED3F007C0A0F /* AppView.swift in Sources */,
+				2D2152022869F27E007C0A0F /* AppListView.swift in Sources */,
 				2D2151DD2864BC2E007C0A0F /* ContentView.swift in Sources */,
+				2D2151F02868C485007C0A0F /* AppDetailView.swift in Sources */,
+				2D2151EC2864C52A007C0A0F /* TodayView.swift in Sources */,
+				2D2151F428694757007C0A0F /* TodayListView.swift in Sources */,
 				2D2151DB2864BC2E007C0A0F /* CCC_2nd_AppStoreApp.swift in Sources */,
+				2D2152002869ECAC007C0A0F /* AppListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
