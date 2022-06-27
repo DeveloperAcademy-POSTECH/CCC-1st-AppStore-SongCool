@@ -34,6 +34,9 @@ struct AppListView: View {
                     }
                 }
             }
+            .onAppear {
+                UIScrollView.appearance().isPagingEnabled = true
+            }
             Divider()
                 .padding(.horizontal, 20)
                 .padding(.top, 32)
