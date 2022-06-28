@@ -108,9 +108,9 @@ struct ExtractedView: View {
                     .padding(.leading, 20)
                 }
             }
-            .onAppear {
-                UIScrollView.appearance().isPagingEnabled = true
-            }
+//            .onAppear {
+//                UIScrollView.appearance().isPagingEnabled = true
+//            }
         }
     }
 }

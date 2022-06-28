@@ -34,9 +34,10 @@ struct AppListView: View {
                     }
                 }
             }
-            .onAppear {
-                UIScrollView.appearance().isPagingEnabled = true
-            }
+//            .onAppear {
+//                UIScrollView.appearance().isPagingEnabled = true
+//            }
+            // appearance는 스테틱.. 앱전체에 영향을 받음.
             Divider()
                 .padding(.horizontal, 20)
                 .padding(.top, 32)
